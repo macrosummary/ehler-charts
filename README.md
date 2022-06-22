@@ -12,11 +12,15 @@ Usage on your own risk.
 Then enter all requested details, where symbol can be any symbol on yahoo finance.
 Do not leave any request empty, otherwise the program exits.
 
+You can also enter spreads like `XOP/SPY` or `TLT-IEI
 
+### Example for SPY and IEI
 
-### Example for Crude Oil
-
+#### Code set 1
 ![plot](./Code1.jpg)
+#### Code set 2
 ![plot](./Code2.jpg)
+#### Plot 1: Ehler plot
 ![plot](./Plot1.jpg)
+#### Plot 2: Ehler indicators
 ![plot](./Plot2.jpg)
