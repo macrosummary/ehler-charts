@@ -12,7 +12,7 @@ Usage on your own risk.
 Then enter all requested details, where symbol can be any symbol on yahoo finance.
 Do not leave any request empty, otherwise the program exits.
 
-You can also enter spreads like `XOP/SPY` or `TLT-IEI
+You can also enter spreads like `XOP/SPY` or `TLT-IEI`.
 
 ### Example for SPY and IEI
 
