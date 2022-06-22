@@ -2,7 +2,7 @@
 This script creates a plot of a seasonality of an asset using command line.
 
 ### Description and usage:
-https://macrosummary.substack.com/p/the-seasonality-plotter?s=w
+Macro Summary post coming...
 
 ### Warning:
 Usage on your own risk.
