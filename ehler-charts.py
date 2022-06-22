@@ -184,6 +184,7 @@ class EhlerPlot(object):
         fig, ax = plt.subplots(2)
         ax[0].plot(self.data[self.input[0]])
         ax[0].plot(self.data[self.input[1]])
+        ax[0].set_title(self.title)
         color = ['b'] * (len(self.data.tail(40)) - 1) + ['r']
         ax[1].scatter(x=self.data['lstvaluesp'].tail(40), y=self.data['lstvaluesp2'].tail(40), color=color)
         ax[1].plot(self.data['lstvaluesp'].tail(40), self.data['lstvaluesp2'].tail(40))
