@@ -178,7 +178,7 @@ class EhlerPlot(object):
         ax[2, 1].plot(self.data['price2ms'])
         ax[3, 1].plot(self.data['price2rms'])
         ax[3, 1].set_title('price2rms')
-        ax[0, 1].text(0.22, 0.05, 'Source: Macro Summary, Yahoo Finance.', fontsize=7, alpha=0.5, horizontalalignment='center', verticalalignment='center', transform=ax[1].transAxes)
+        ax[0, 1].text(0.22, 0.05, 'Source: Macro Summary, Yahoo Finance.', fontsize=7, alpha=0.5, horizontalalignment='center', verticalalignment='center', transform=ax[0, 1].transAxes)
         plt.draw()   
          
         fig, ax = plt.subplots(2)
@@ -197,13 +197,12 @@ class EhlerPlot(object):
 def demo():
     """Runs a demo program.
     """
-    EP = EhlerPlot(ticker1='SPY', ticker2='RTX')
+    EP = EhlerPlot(ticker1='SPY', ticker2='RTX', title='DEMO with SPY and RTX.')
     EP.analyze_tickers()
     EP.download_data()
     EP.spread()
     EP.resampling()
     EP.indicator()
-    print(EP.data)
     EP.plot()
     print('done.')
 
@@ -234,7 +233,8 @@ def run():
         EP = EhlerPlot(ticker1 = str(ticker1[0]), 
                      ticker2 = str(ticker2[0]), 
                      start_date = str(start_date[0]), 
-                     freq = str(freq[0])
+                     freq = str(freq[0]), 
+                     title = str(title[0])
                      )
 
         print("Analyzing tickers...")
