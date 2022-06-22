@@ -178,6 +178,7 @@ class EhlerPlot(object):
         ax[2, 1].plot(self.data['price2ms'])
         ax[3, 1].plot(self.data['price2rms'])
         ax[3, 1].set_title('price2rms')
+        ax[0, 1].text(0.22, 0.05, 'Source: Macro Summary, Yahoo Finance.', fontsize=7, alpha=0.5, horizontalalignment='center', verticalalignment='center', transform=ax[1].transAxes)
         plt.draw()   
          
         fig, ax = plt.subplots(2)
@@ -188,6 +189,7 @@ class EhlerPlot(object):
         ax[1].plot(self.data['lstvaluesp'].tail(40), self.data['lstvaluesp2'].tail(40))
         ax[1].set_ylabel(self.input[0])
         ax[1].set_xlabel(self.input[1])
+        ax[1].text(0.22, 0.05, 'Source: Macro Summary, Yahoo Finance.', fontsize=7, alpha=0.5, horizontalalignment='center', verticalalignment='center', transform=ax[1].transAxes)
         plt.show()
         
         
