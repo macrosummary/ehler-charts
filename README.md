@@ -2,7 +2,7 @@
 This script creates a plot of a seasonality of an asset using command line.
 
 ### Description and usage:
-Macro Summary post coming...
+The Macro Summary - Tool: Ehler Charts (https://macrosummary.substack.com/p/tool-ehler-charts)
 
 ### Warning:
 Usage on your own risk.
